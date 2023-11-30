@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 20:14:30 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/07/30 20:29:53 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/11/30 03:16:29 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int main(void)
     delete zombie2;
 
     std::cout << "Calling randomChump()." << std::endl;
-    randomChump("randi");
+	std::cout << "Zombie name: " << std::flush;
+	std::cin >> name;
+    randomChump(name);
     return 0;
 }

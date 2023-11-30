@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 18:48:56 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/07/31 19:12:52 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/11/30 03:48:57 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 class Harl
 {
 	public:
-	Harl();
-	~Harl();
 
 	void complain( std::string level );
 

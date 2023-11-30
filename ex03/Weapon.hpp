@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 16:38:17 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/07/31 17:02:21 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/11/30 03:37:56 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class Weapon
 {
 	public:
 	Weapon(std::string type);
-	~Weapon();
 	
 	const std::string&	getType(void);
 	void				setType(std::string type);

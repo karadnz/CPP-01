@@ -6,7 +6,7 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/30 20:14:28 by mkaraden          #+#    #+#              #
-#    Updated: 2023/07/31 17:03:52 by mkaraden         ###   ########.fr        #
+#    Updated: 2023/11/30 03:43:07 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,12 +24,6 @@ SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
 HEADER		= Weapon.hpp HumanA.hpp HumanB.hpp
 
-#Colors:
-GREEN		=	\e[92;5;118m
-YELLOW		=	\e[93;5;226m
-GRAY		=	\e[33;2;37m
-RESET		=	\e[0m
-CURSIVE		=	\e[33;3m
 
 #Debug 
 ifeq ($(DEBUG), 1)

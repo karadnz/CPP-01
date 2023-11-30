@@ -6,13 +6,15 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/30 20:14:28 by mkaraden          #+#    #+#              #
-#    Updated: 2023/07/30 20:41:44 by mkaraden         ###   ########.fr        #
+#    Updated: 2023/11/30 03:26:37 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= Zombie
 	
 CC			= c++
+#Def
+#-D N=9 
 FLAGS		= -Wall -Wextra -Werror -std=c++98
 RM			= rm -rf
 
@@ -24,12 +26,6 @@ SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
 HEADER		= Zombie.hpp
 
-#Colors:
-GREEN		=	\e[92;5;118m
-YELLOW		=	\e[93;5;226m
-GRAY		=	\e[33;2;37m
-RESET		=	\e[0m
-CURSIVE		=	\e[33;3m
 
 #Debug 
 ifeq ($(DEBUG), 1)

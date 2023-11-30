@@ -6,20 +6,12 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 18:53:46 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/07/31 19:02:34 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/11/30 03:45:52 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-Harl::Harl()
-{
-	
-}
-Harl::~Harl()
-{
-	
-}
 
 void Harl::complain( std::string level )
 {

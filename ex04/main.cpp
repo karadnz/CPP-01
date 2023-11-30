@@ -6,18 +6,13 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 17:57:06 by mkaraden          #+#    #+#             */
-/*   Updated: 2023/11/30 08:53:49 by mkaraden         ###   ########.fr       */
+/*   Updated: 2023/11/30 09:47:46 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mySed.hpp"
 #include <iostream>
-/*
-karpuz meybuz karpuzkarpuz meybuzmeybuz meybuz karpuz karpuz
-meybuzkarpuz karpuz meybuz meybuz karpuz karpuz meybuz meybuz
 
-bbbb
-*/
 int main(int argc, char **argv)
 {
 	if (argc != 4)

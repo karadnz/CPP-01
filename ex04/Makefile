@@ -6,7 +6,7 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/30 08:51:25 by mkaraden          #+#    #+#              #
-#    Updated: 2023/11/30 09:04:25 by mkaraden         ###   ########.fr        #
+#    Updated: 2023/11/30 09:49:50 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,14 @@ NAME		= mySed
 
 FILE = deneme
 
+TEXT2 = karpuz meybuz karpuzkarpuz meybuzmeybuz meybuz karpuz karpuz\
+	meybuzkarpuz karpuz meybuz meybuz karpuz karpuz meybuz meybuz\
+	bbbb
+
 define TEXT
-karpuz meybuz karpuzkarpuz meybuzmeybuz meybuz karpuz karpuz\
-meybuzkarpuz karpuz meybuz meybuz karpuz karpuz meybuz meybuz\
-bbbb
+	karpuz meybuz karpuzkarpuz meybuzmeybuz meybuz karpuz karpuz\
+	meybuzkarpuz karpuz meybuz meybuz karpuz karpuz meybuz meybuz\
+	bbbb
 endef
 
 	
@@ -34,7 +38,7 @@ OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
 HEADER		= mySed.hpp 
 
 
-#Debug 
+#Debug "$$TEXT"
 ifeq ($(DEBUG), 1)
    OPTS = -g
 endif
@@ -53,10 +57,10 @@ $(OBJDIR)/%.o: %.cpp $(HEADER)
 
 $(FILE):
 	@touch $(FILE)
-	printf "$$TEXT" > $(FILE) 
+	printf "$(TEXT2)" > $(FILE) 
 
 clean:
-	@$(RM) $(OBJDIR) $(OBJ) $(FILE)
+	@$(RM) $(OBJDIR) $(OBJ) $(FILE) $(FILE).replace
 	@printf "$(YELLOW)    - Object files removed.$(RESET)\n"
 
 fclean: clean
